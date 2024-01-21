@@ -1,14 +1,14 @@
 /* Variables that are used frequently */
 :root {
 /* main app stuff */
---background: url(https://i.imgur.com/bgmVeyt.jpg);
+--background: url(https://i.imgur.com/bgmVeyt.png);
 --background-primary: transparent;
 --background-secondary: rgba(0,0,0,0.2);
 --background-secondary-alt: rgba(0,0,0,0.25);
 --background-tertiary: rgba(0,0,0,0.1);
---font-family: 'Poppins','Roboto','Righteous';
 /* colours */
-
+--mention-color: rgba(0,0,0,0);
+--user-id:0; /* Insert your user ID */
 /* shapes */
 --radius: 20%;
 }
@@ -45,11 +45,14 @@ foreignObject[mask*="url(#"]{
 
 /* Friends avatar shape */
 .avatar__991e2 {
-border-radius:20%;
+border-radius: 20%;
 }
 /* Folder icon shape */
-.folderIcronWrapper_72239 {
+.folderIconWrapper_72239 {
 background-color: rgba(0,0,0,0);
+}
+.icon__0cbed {
+border-radius: 20%;
 }
 
 /* Folder icon background fix */
