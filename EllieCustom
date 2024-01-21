@@ -1,0 +1,64 @@
+/**
+ * @name Custom
+ * @author Ellie
+ * @description uwu
+ * @version 0.0.1
+ */
+/* Variables that are used frequently */
+:root {
+/* main app stuff */
+--background: url(https://i.imgur.com/bgmVeyt.jpg);
+--background-primary: transparent;
+--background-secondary: rgba(0,0,0,0.2);
+--background-secondary-alt: rgba(0,0,0,0.25);
+--background-tertiary: rgba(0,0,0,0.1);
+--font-family: 'Poppins','Roboto','Righteous';
+/* colours */
+
+/* shapes */
+--radius: 20%;
+}
+
+
+/* Dorion Topbar */
+#dorion_topbar {
+background-color: rgba(0,0,0,0.7);
+border-radius:20px;
+}
+
+/* Set Background*/
+body {
+	background-color: transparent;
+}
+
+.appMount_fae9dd {
+	background: var(--background) !important;
+	background-repeat: no-repeat !important;
+	background-position: center !important;
+	background-size: cover !important;
+	border-radius:10px;
+}
+
+/* Messages avatar shape */
+.avatar__08316 {
+border-radius:20%;
+}
+
+/* Remove circle mask overlay thing */
+foreignObject[mask*="url(#"]{
+	mask: none;
+}
+
+/* Friends avatar shape */
+.avatar__991e2 {
+border-radius:20%;
+}
+/* Folder icon shape */
+.folderIcronWrapper_72239 {
+background-color: rgba(0,0,0,0);
+}
+
+/* Folder icon background fix */
+.folder__17546 {
+background-color: transparent;
+}
