@@ -48,14 +48,14 @@ foreignObject[mask*="url(#"]{
 }
 /* Friends avatar shape */
 .avatar__991e2 {
-border-radius: 20%;
+border-radius: var(--radius);
 }
 /* Folder icon shape */
 .folderIconWrapper_72239 {
 background-color: rgba(0,0,0,0);
 }
 .icon__0cbed {
-border-radius: 20%;
+border-radius: var(--radius);
 }
 
 /* Folder icon background fix */
