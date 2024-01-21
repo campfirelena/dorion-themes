@@ -1,14 +1,17 @@
 /* Variables that are used frequently */
 :root {
 /* main app stuff */
---background: url(https://i.imgur.com/bgmVeyt.png);
+--background: url(https://i.imgur.com/bgmVeyt.jpg);
 --background-primary: transparent;
 --background-secondary: rgba(0,0,0,0.2);
 --background-secondary-alt: rgba(0,0,0,0.25);
 --background-tertiary: rgba(0,0,0,0.1);
+--font-family: 'Poppins','Roboto','Righteous';
+--main-width: 100%;
+--main-height: 100%;
 /* colours */
 --mention-color: rgba(0,0,0,0);
---user-id:0; /* Insert your user ID */
+--user-id:297711039846547458;
 /* shapes */
 --radius: 20%;
 }
@@ -19,12 +22,10 @@
 background-color: rgba(0,0,0,0.7);
 border-radius:20px;
 }
-
 /* Set Background*/
 body {
 	background-color: transparent;
 }
-
 .appMount_fae9dd {
 	background: var(--background) !important;
 	background-repeat: no-repeat !important;
@@ -32,17 +33,19 @@ body {
 	background-size: cover !important;
 	border-radius:10px;
 }
-
+/* Main Window Size */
+.container__037ed {
+  width: var(--main-width);
+  height: var(--main-height);
+}
 /* Messages avatar shape */
 .avatar__08316 {
 border-radius:20%;
 }
-
 /* Remove circle mask overlay thing */
 foreignObject[mask*="url(#"]{
 	mask: none;
 }
-
 /* Friends avatar shape */
 .avatar__991e2 {
 border-radius: 20%;
@@ -58,4 +61,8 @@ border-radius: 20%;
 /* Folder icon background fix */
 .folder__17546 {
 background-color: transparent;
+}
+/* DMs button shape */
+.childWrapper__01b9c {
+border-radius: var(--radius);
 }
