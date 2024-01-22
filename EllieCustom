@@ -3,15 +3,22 @@
 /* main app stuff */
 --background: url(https://i.imgur.com/bgmVeyt.jpg);
 --background-primary: transparent;
---background-secondary: rgba(0,0,0,0.2);
---background-secondary-alt: rgba(0,0,0,0.25);
---background-tertiary: rgba(0,0,0,0.1);
+--background-secondary: rgba(0,0,0,0.3);
+--background-secondary-alt: rgba(0,0,0,0.3);
+--background-tertiary: rgba(0,0,0,0);
 --font-family: 'Poppins','Roboto','Righteous';
 --main-width: 100%;
 --main-height: 100%;
+--app-margin: 24px;
+--app-blur:1px;
+--app-radius:10px;
 /* colours */
---mention-color: rgba(0,0,0,0);
+--accent-hsl: 310,100%,30%; 
+--accent-text-color: #000;
+--message-color: rgba(0,0,0,0.4);
+--message-color-hover: rgba(0,0,0,0.6);
 --user-id:297711039846547458;
+--textarea-color: rgba(255,255,255,0.1);
 /* shapes */
 --radius: 20%;
 }
@@ -33,6 +40,18 @@ body {
 	background-size: cover !important;
 	border-radius:10px;
 }
+/* Blur */
+.layers_a23c37 {
+margin: calc(var(--app-margin)/2) var(--app-margin) var(--app-margin) var(--app-margin);
+border-radius: var(--app-radius); 
+z-index: 1;
+backdrop-filter: blur(var(--app-blur)) !important;
+}
+/* Text Selection Color */
+::selection {
+  background: hsla(var(--accent-hsl), 0.45);
+  color: var(--accent-text-color);
+}
 /* Main Window Size */
 .container__037ed {
   width: var(--main-width);
@@ -50,6 +69,7 @@ foreignObject[mask*="url(#"]{
 .avatar__991e2 {
 border-radius: var(--radius);
 }
+/* Guilds List */
 /* Folder icon shape */
 .folderIconWrapper_72239 {
 background-color: rgba(0,0,0,0);
@@ -77,4 +97,26 @@ background-color: transparent;
 .message__80c10.mentioned__58017.selected_fd9051,
 .mouse-mode.full-motion .mentioned__58017:hover {
 background-color: transparent;
+}
+/* User list*/
+.container_b2ce9c {
+  background-color: transparent;
+}
+.members__9f47b, .members__9f47b > div {
+  background-color: transparent;
+}
+.member_aa4760 {
+  background-color: transparent;
+}
+/* Text area */
+.channelTextArea__56a36,
+.wrapper_fbbb73 {
+  --textarea-alpha: 0.1;
+  margin: 12px 0 12px 0;
+  background: rgba(255,255,255,0.1);
+  border-radius: 22px;
+}
+.channelTextArea__56a36 .scrollableContainer__33e06,
+.wrapper_fbbb73 .scrollableContainer__33e06 {
+  background-color: transparent;
 }
