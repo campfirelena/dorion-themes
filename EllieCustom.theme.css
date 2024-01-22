@@ -124,11 +124,21 @@ background-color: transparent;
 .sidebar_ded4b5 {
 border-radius: var(--app-radius);
 }
-/* Remove Nitro gift button */
+/* Remove Textbar buttons */
 button[aria-label="Send a gift"] {
-    display: none;
-}
-/* Hide sticker picker button */
+    display: none;}
 button[aria-label="Open sticker picker"] {
-    display: none;
-}
+    display: none;}
+
+/* Remove Nitro Stuff in Settings */
+div[aria-label="User Settings"] > div[aria-label="Gift Inventory"] + div[class^="item_"] + div[class^="separator"] { display: none; }
+div[aria-label="User Settings"] > div[aria-label="Clips"] + div[class^="item_"] + div[class^="separator_"] + div[class^="header_"] { display: none; } 
+div[aria-label="User Settings"] > div[aria-label="Clips"] + div[class^="item_"] + div[class^="separator_"] + div[class^="header_"] ~ div[class^="header_"] { display: block; }
+div[aria-label="User Settings"] > div[aria-label="Nitro"] { display: none; }
+div[aria-label="User Settings"] > div[aria-label="Nitro"] + div { display: none; }
+div[aria-label="User Settings"] > div[aria-label="Subscriptions"] { display: none; }
+div[aria-label="User Settings"] > div[aria-label="Gift Inventory"] { display: none; }
+div[aria-label="User Settings"] > div[aria-label="Gift Inventory"] + div[class^="item_"] { display: none; }
+/* Remove Nitro Tabs */
+a[data-list-item-id$="___nitro"] { display: none; }
+a[data-list-item-id$="___shop"] { display: none; }
