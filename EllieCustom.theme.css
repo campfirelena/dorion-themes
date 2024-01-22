@@ -120,3 +120,15 @@ background-color: transparent;
 .wrapper_fbbb73 .scrollableContainer__33e06 {
   background-color: transparent;
 }
+/* DM List Corners */
+.sidebar_ded4b5 {
+border-radius: var(--app-radius);
+}
+/* Remove Nitro gift button */
+button[aria-label="Send a gift"] {
+    display: none;
+}
+/* Hide sticker picker button */
+button[aria-label="Open sticker picker"] {
+    display: none;
+}
