@@ -84,7 +84,10 @@ background-color: rgba(0,0,0,0);
 .icon__0cbed {
 border-radius: var(--radius);
 }
-
+/* Remove the unread pill */
+.wrapper__3670f {
+display: none;
+}
 /* Folder icon background fix */
 .folder__17546 {
 background-color: transparent;
