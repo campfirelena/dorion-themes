@@ -61,6 +61,13 @@ backdrop-filter: blur(var(--app-blur)) !important;
 .avatar__08316 {
 border-radius:20%;
 }
+/* Add message background */
+.wrapper__09ecc {
+margin-left: 68px;
+margin-right: 16px;
+background-color: var(--message-color) !important;
+border-radius: var(--app-radius);
+}
 /* Remove circle mask overlay thing */
 foreignObject[mask*="url(#"]{
 	mask: none;
