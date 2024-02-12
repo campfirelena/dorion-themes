@@ -72,6 +72,9 @@ border-radius: var(--app-radius);
 foreignObject[mask*="url(#"]{
 	mask: none;
 }
+.wrapperSimple_a34580 {
+border-radius: 0;
+}
 /* Friends avatar shape */
 .avatar__991e2 {
 border-radius: var(--radius);
