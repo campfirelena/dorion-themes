@@ -91,6 +91,7 @@ border-radius: var(--radius);
 width: 56px;
 left: 8px;
 bottom: 2px;
+border-radius: var(--app-radius);
 }
 /* Remove the unread pill */
 .wrapper__3670f {
