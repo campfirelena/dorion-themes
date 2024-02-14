@@ -161,3 +161,7 @@ div[aria-label="User Settings"] > div[aria-label="Gift Inventory"] + div[class^=
 /* Remove Nitro Tabs */
 a[data-list-item-id$="___nitro"] { display: none; }
 a[data-list-item-id$="___shop"] { display: none; }
+/* Speaking circle shape */
+.avatarSpeaking__61fb1 {
+border-radius: var(--app-radius);
+}
