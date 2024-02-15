@@ -127,7 +127,7 @@ background-color: transparent;
 .member_aa4760 {
   background-color: transparent;
 }
-/* Text area */
+/* Text area Styles */
 .channelTextArea__56a36,
 .wrapper_fbbb73 {
   --textarea-alpha: 0.1;
@@ -139,7 +139,15 @@ background-color: transparent;
 .wrapper_fbbb73 .scrollableContainer__33e06 {
   background-color: transparent;
 }
-
+.container_dbadf5 {
+margin-left: var(--chat-margin-left);
+}
+.wrapper__09ecc {
+margin-left: var(--chatbox-margin-left);
+}
+.cozy_f5c119 .contents_f41bb2 {
+margin-left: var(--chat-margin-left);
+}
 /* DM List Corners */
 .sidebar_ded4b5 {
 border-radius: var(--app-radius);
@@ -149,12 +157,7 @@ button[aria-label="Send a gift"] {
     display: none;}
 button[aria-label="Open sticker picker"] {
     display: none;}
-.wrapper__09ecc {
-margin-left: var(--chatbox-margin-left);
-}
-.cozy_f5c119 .contents_f41bb2 {
-margin-left: var(--chat-margin-left);
-}
+
 /* Remove Nitro Stuff in Settings */
 div[aria-label="User Settings"] > div[aria-label="Gift Inventory"] + div[class^="item_"] + div[class^="separator"] { display: none; }
 div[aria-label="User Settings"] > div[aria-label="Clips"] + div[class^="item_"] + div[class^="separator_"] + div[class^="header_"] { display: none; } 
