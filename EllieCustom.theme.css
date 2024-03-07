@@ -13,12 +13,13 @@
 --app-blur:10px;
 --app-radius:10px;
 /* colours */
---accent-hsl: 310,100%,30%; 
+--accent-rgb: 255, 26, 113; 
 --accent-text-color: #000;
 --message-color: rgba(0,0,0,0.4);
 --message-color-hover: rgba(0,0,0,0.6);
 --user-id:297711039846547458;
 --textarea-color: rgba(255,255,255,0.1);
+--shadow-width: 10px;
 /* shapes */
 --radius: 20%;
 }
@@ -49,7 +50,7 @@ backdrop-filter: blur(var(--app-blur)) !important;
 }
 /* Text Selection Color */
 ::selection {
-  background: hsla(var(--accent-hsl), 0.45);
+  background: rgba(var(--accent-rgb), 0.45);
   color: var(--accent-text-color);
 }
 /* Main Window Size */
@@ -117,6 +118,17 @@ background-color: transparent;
 .mouse-mode.full-motion .mentioned__58017:hover {
 background-color: transparent;
 }
+/* @mention text */
+.markup_a7e664 .wrapper_f46140 {
+color: rgb(var(--accent-rgb));
+}
+/* Add the cool outline thingy */
+.mentioned__58017 {
+border: none;
+outline: 2px solid rgba(var(--accent-rgb), 1);
+outline-offset: -1px;
+box-shadow: 0 0 var(--shadow-width) rgba(var(--accent-rgb), 1);
+}
 /* User list*/
 .container_b2ce9c {
   background-color: transparent;
@@ -177,4 +189,11 @@ border-radius: var(--app-radius);
 /* Fix the bottom 2 buttons */
 .circleIconButton_d8df29.selected__5250e, .circleIconButton_d8df29 {
 border-radius: var(--app-radius);
+}
+/* Profile Card Background */
+.fieldList_aab0de {
+background-color: var(--background-primary);
+}
+.accountProfileCard__22589 {
+background-color: var(--background-secondary);
 }
