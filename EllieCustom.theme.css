@@ -174,3 +174,6 @@ a[data-list-item-id$="___shop"] { display: none; }
 .avatarSpeaking__61fb1 {
 border-radius: var(--app-radius);
 }
+.circleIconButton_d8df29.selected__5250e, .circleIconButton_d8df29 {
+border-radius: var(--app-radius);
+}
